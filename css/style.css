@@ -1,0 +1,130 @@
+:root{
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desatured-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --Red-Hat-Display: 'Red Hat Display', sans-serif;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+body{
+  background: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  font-family: var(--Red-Hat-Display);
+  font-size: 1rem;
+  font-weight: 500;
+  background-size: cover;
+}
+
+.container{
+  display: block;
+  width: 600px;
+  max-width: 100%;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 30px;
+  padding-bottom: 20px;
+}
+
+.illustration{
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.summary{
+  padding: 40px;
+  text-align: center;
+  color: var(--desatured-blue);
+}
+
+.summary h1{
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+}
+
+.summary p{
+  line-height: 1.5;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.price{
+  display: flex;
+  background: var(--very-pale-blue);
+  justify-content: space-between;
+  width: 330px;
+  margin: 0 auto;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.anual-plan{
+  display: inline-flex;
+  gap: 10px;
+  padding: 20px 30px;
+  color: var(--desatured-blue);
+}
+
+.change{
+  margin-right: 20px;
+  color: var(--dark-blue);
+  text-decoration: underline;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.change:hover{
+  color: var(--desatured-blue);
+}
+
+.anual-plan span{
+  display: contents;
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+.container a{
+  display: block;
+  width: 50%;
+  max-width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.payment{
+  background: var(--dark-blue);
+  color: #fff;
+}
+
+.payment:hover{
+  background: var(--desatured-blue);
+}
+
+.cancel{
+  background: transparent;
+  color: var(--desatured-blue);
+}
+
+.cancel:hover{
+  color: var(--dark-blue);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
